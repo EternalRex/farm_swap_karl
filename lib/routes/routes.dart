@@ -4,6 +4,8 @@ import 'package:farm_swap_karl/pages/admin_account_page/admin_account.dart';
 import 'package:farm_swap_karl/pages/admin_accounts_page/screens/admin_accounts.dart';
 import 'package:farm_swap_karl/pages/admin_sign_page/screens/admin_signin.dart';
 import 'package:farm_swap_karl/pages/admin_signup_page/screens/admin_signup.dart';
+import 'package:farm_swap_karl/pages/admin_signup_page/screens/admin_signup2.dart';
+import 'package:farm_swap_karl/pages/admin_signup_page/screens/admin_signup3.dart';
 import 'package:farm_swap_karl/pages/dashboard_page/screens/dashboard.dart';
 import 'package:farm_swap_karl/pages/intro_page/intro_page.dart';
 import 'package:flutter/material.dart';
@@ -15,6 +17,8 @@ class RoutesManager {
   static const dashboard = "/dashboard";
   static const adminAccount = "/adminaccount";
   static const adminSignUp = "/adminsignup";
+  static const adminSignUp2 = "/adminsignup2";
+  static const adminsignup3 = "/adminsignup3";
   static const displayAccount = "/adminaccountsdisplay";
 
 //METHOD THAT WILL SWITCH THE ROUTE BASED ON THE PROVIDED ROUTENAME
@@ -45,8 +49,14 @@ class RoutesManager {
 
       case adminSignUp:
         return MaterialPageRoute(
-          builder: (context) => const SignUp(),
+          builder: (context) => const AdminSignUp(),
         );
+
+      case adminSignUp2:
+        return MaterialPageRoute(builder: (context) => AdminSignUp2());
+
+      case adminsignup3:
+        return MaterialPageRoute(builder: (context) => AdminSignup3());
 
       case displayAccount:
         return MaterialPageRoute(

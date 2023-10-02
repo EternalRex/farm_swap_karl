@@ -26,7 +26,7 @@ class GetUsername extends StatelessWidget {
           VALUE PAIRS IS A STRING AND DYNAMIC */
           Map<String, dynamic> data =
           /*USING THE SNAPSHOT OBJECT WHICH WE GET FROM <DocumentSnapshot>  then we access
-          the data which will contain the recent received data from the data function which contains all the 
+          the data which wi  ll contain the recent received data from the data function which contains all the 
           data from firebase*/
               snapshot.data!.data() as Map<String, dynamic>;
           return Column(
@@ -34,7 +34,7 @@ class GetUsername extends StatelessWidget {
               /*ACTUAL ACCESSING OF DATA */
               Text("First Name : ${data["First Name"]}"),
               Text("Last Name: ${data["Last Name"]}"),
-            ],
+            ], 
           );
         }
         return const Text("Loading....");
